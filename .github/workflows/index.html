@@ -1,5 +1,260 @@
 <!DOCTYPE html>
-<html>
-  <head><title>ViralMondo</title></head>
-  <body><h1>Chargement...</h1></body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buzz & Viralité – ViralMondo</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #0f172a;
+        color: #fff;
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        color: #3b82f6;
+      }
+      nav {
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .category-btn {
+        background-color: #1e293b;
+        color: #60a5fa;
+        border: 1px solid #3b82f6;
+        border-radius: 8px;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+      .category-btn:hover {
+        background-color: #3b82f6;
+        color: white;
+      }
+      .post {
+        background-color: #1e293b;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+      }
+      .post img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+      .post a {
+        color: #60a5fa;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .post a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9rem;
+        color: #94a3b8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🔥 ViralMondo</h1>
+        <p>Buzz, célébrités et actualités virales du moment</p>
+      </header>
+
+      <!-- BOUTONS DE CATÉGORIES -->
+      <nav>
+        <a href="#musique" class="category-btn">🎵 Musique</a>
+        <a href="#animaux" class="category-btn">🐾 Animaux</a>
+        <a href="#technologie" class="category-btn">💻 Technologie</a>
+        <a href="#art" class="category-btn">🎨 Art</a>
+        <a href="#voyage" class="category-btn">🌍 Voyage</a>
+        <a href="#gastronomie" class="category-btn">🍽️ Gastronomie</a>
+        <a href="#theatre" class="category-btn">🎭 Théâtre</a>
+        <a href="#sports" class="category-btn">🚴 Sports</a>
+        <a href="#cinema" class="category-btn">🎬 Cinéma</a>
+        <a href="#buzz" class="category-btn">🎬 Buzz</a>
+      </nav>
+
+      <!-- ARTICLES -->
+
+      <!-- Article 1 -->
+      <article class="post" id="musique">
+        <h2>🎤 Une performance musicale enflamme la scène !</h2>
+        <img
+          src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=1400&q=80"
+          alt="Performance musicale"
+        />
+        <p>
+          Un artiste a captivé le public avec une performance inoubliable. Les
+          réseaux sociaux s'enflamment ! <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >Découvrez la vidéo virale ici</a
+          >
+        </p>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="post" id="animaux">
+        <h2>🐶 Un chien sauve son maître d'un danger imminent</h2>
+        <img
+          src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1400&q=80"
+          alt="Chien héroïque"
+        />
+        <p>
+          Ce chien courageux a sauvé son propriétaire d'une situation
+          périlleuse. Une histoire émouvante qui fait le tour du web.
+          <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >Lire l'histoire complète</a
+          >
+        </p>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="post" id="technologie">
+        <h2>🚀 Une startup révolutionne le voyage spatial</h2>
+        <img
+          src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1400&q=80"
+          alt="Startup spatiale"
+        />
+        <p>
+          Une jeune entreprise propose des voyages spatiaux accessibles au grand
+          public. Une avancée majeure dans l'exploration spatiale.
+          <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >En savoir plus sur cette innovation</a
+          >
+        </p>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="post" id="art">
+        <h2>🎨 Une œuvre d'art vendue à un prix record</h2>
+        <img
+          src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?auto=format&fit=crop&w=1400&q=80"
+          alt="Œuvre d'art"
+        />
+        <p>
+          Un tableau contemporain a été adjugé à un prix jamais vu auparavant.
+          Le monde de l'art est en effervescence. <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >Voir l'œuvre et son histoire</a
+          >
+        </p>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="post" id="voyage">
+        <h2>🏞️ Découverte d'un lieu naturel époustouflant</h2>
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80"
+          alt="Lieu naturel"
+        />
+        <p>
+          Un site naturel méconnu attire l'attention des voyageurs du monde
+          entier. Un paradis caché à explorer. <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >Découvrez ce lieu magique</a
+          >
+        </p>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="post" id="technologie">
+        <h2>📱 Une application change la vie des étudiants</h2>
+        <img
+          src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1400&q=80"
+          alt="Application étudiante"
+        />
+        <p>
+          Cette nouvelle application aide les étudiants à mieux gérer leur temps
+          et leurs études. Un outil indispensable pour la rentrée.
+          <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >Téléchargez l'application ici</a
+          >
+        </p>
+      </article>
+
+      <!-- Article 7 -->
+      <article class="post" id="gastronomie">
+        <h2>🍽️ Un chef crée un plat inédit qui fait sensation</h2>
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80"
+          alt="Plat gastronomique"
+        />
+        <p>
+          Un chef renommé présente une création culinaire unique qui émerveille
+          les papilles. Les gourmets en redemandent. <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >Voir la recette et les réactions</a
+          >
+        </p>
+      </article>
+
+      <!-- Article 8 -->
+      <article class="post" id="theatre">
+        <h2>🎭 Une performance théâtrale bouleverse le public</h2>
+        <img
+          src="https://images.unsplash.com/photo-1504274066651-8d31a536b11a?auto=format&fit=crop&w=1400&q=80"
+          alt="Performance théâtrale"
+        />
+        <p>
+          Une pièce de théâtre contemporaine aborde des thèmes profonds et
+          suscite de vives émotions. Un succès critique et public.
+          <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >Lire les critiques et témoignages</a
+          >
+        </p>
+      </article>
+
+      <!-- Article 9 -->
+      <article class="post" id="sports">
+        <h2>🚴‍♂️ Un cycliste parcourt le monde pour la paix</h2>
+        <img
+          src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1400&q=80"
+          alt="Cycliste pour la paix"
+        />
+        <p>
+          Un homme parcourt des milliers de kilomètres à vélo pour promouvoir la
+          paix. Une aventure humaine inspirante. <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >Suivez son périple ici</a
+          >
+        </p>
+      </article>
+
+      <!-- Article 10 -->
+      <article class="post" id="cinema">
+        <h2>🎬 Un court-métrage indépendant remporte un prix prestigieux</h2>
+        <img
+          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80"
+          alt="Court-métrage primé"
+        />
+        <p>
+          Un film indépendant séduit le jury d'un festival international et
+          remporte le grand prix. Une reconnaissance méritée. <br /><br />👉
+          <a href="https://otieu.com/4/9347005" target="_blank"
+            >Regardez le film et son making-of</a
+          >
+        </p>
+      </article>
+
+      <footer>© 2025 ViralMondo – Tous droits réservés</footer>
+    </div>
+  </body>
 </html>
