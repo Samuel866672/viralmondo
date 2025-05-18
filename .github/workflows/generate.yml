@@ -1,0 +1,35 @@
+name: Auto Generate Viral Content
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Tous les jours à 9h UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          npm install axios
+          npm install fs
+
+      - name: Generate viral content
+        run: |
+          node generate.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "viralbot"
+          git config --global user.email "viral@bot.com"
+          git add .
+          git commit -m "🔁 Auto-generated viral content"
+          git push
